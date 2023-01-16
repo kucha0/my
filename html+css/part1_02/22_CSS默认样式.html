@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul{list-style: none;}
+        a{text-decoration: none; color: #999;}
+        a:hover{text-decoration: underline; color: red;} */
+
+        div{border: 1px black solid;}
+        /* img{vertical-align: bottom;} */
+        img{display: block;}
+    </style>
+</head>
+<body>
+    <!-- <div>这是一个块</div>
+    <span></span>
+    <h1></h1>
+    <h2></h2>
+    <p></p>
+    <ul>
+        <li></li>
+    </ul>
+    <a href="#">这是一个链接</a> -->
+    <div>
+        <img src="../D1/img/111.jpg" alt="">
+    </div>
+</body>
+</html>
+
+
+
+    <!-- CSS默认样式
+        没有默认样式的：div 、span 
+
+        有默认样式的：
+
+            body -> margin : 8px
+            h1 -> margin : 上下 21.44px
+            p  -> margin : 上下 16px
+            ul -> margin : 上下 16px padding : 左 40px
+                (默认点：list-style : disc)
+            a  -> text-decoration : underline; -->
+
+   
+    <!-- css reset : 
+        *{ margin:0; padding:0;}
+            优点：不用考虑哪些标签有默认的margin和padding
+            缺点：稍微的影响性能
+        body,p,h1,ul{ margin:0; padding:0;}
+
+    ul{ list-style : none;}
+    a{text-decoration : none; color : #999}
+    img{display:block}
+        问题的现象：图片跟容器底部有一些空隙。
+            内联元素的对齐方式是按照文字基线对齐的，而不是文字底线对齐的
+            vertical-align: baseline;   基线对齐方式，默认值
+            img{vertical-align: bottom;}   解决方式是推荐的
+
+    写具体页面的时候或一个布局效果的时候：
+        1.写结构
+        2.CSS重置样式
+        3.写具体样式
+ -->

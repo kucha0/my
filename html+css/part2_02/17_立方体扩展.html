@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        .box{width: 300px;height: 300px;
+            border: 1px black solid;
+            margin: 30px auto;
+            perspective: 200px;
+            perspective-origin: top right ;
+        }
+        .box ul{
+            width: 100px;height: 100px;
+            background: red;margin: 100px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 3s;transform-origin: center center -50px;
+            /* transform: scaleZ(.5); */
+            /* transform: scale3d(2,.5,3); */
+            /* transform: translate3d(20px,100px,80px); */
+            transform: rotate3d(1,1,1,30deg);
+        }
+        .box ul li{
+            width: 100px;height: 100px;
+            position: absolute;line-height: 100px;
+            text-align: center;color: white;
+            font-size: 26px;opacity: 0.5;
+            backface-visibility: hidden;
+        }
+        .box ul li:nth-child(1){background: pink;left: 0;top: 0;}
+        .box ul li:nth-child(2){background: blue;left: 100px;top: 0;
+            transform-origin: left;transform: rotateY(90deg);}
+        .box ul li:nth-child(3){background: yellow;left: -100px;top: 0;
+            transform-origin: right;transform: rotateY(-90deg);}
+        .box ul li:nth-child(4){background: green;left: 0;top: -100px;
+            transform-origin: bottom;transform: rotateX(90deg);}
+        .box ul li:nth-child(5){background: grey;left: 0;top: 100px;
+            transform-origin: top;transform: rotateX(-90deg);}
+        .box ul li:nth-child(6){background: saddlebrown;left: 0;top: 0;
+            transform: translateZ(-100px) rotateY(180deg);}
+
+        .box:hover ul{
+            /* transform: rotateY(360deg); */
+            transform: rotate3d(1,1,1,300deg);}
+        
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- 
+transform-style : 3D空间
+    flat (默认值2d)、preserve-3d    (3d，产生一个三维空间) 
+
+3d写法
+    scale3d() :三个值 x y z
+    translate3d() : 三个值 x y z
+    rotate3d() : 四个值 0|1(x轴是否添加旋转角度) 0|1(y轴是否添加旋转角度) 0|1(z轴是否添加旋转角度) deg
+
+    backface-visibility : 背面隐藏
+        hidden , visible(默认值)
+-->

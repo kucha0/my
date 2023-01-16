@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{background: blue;}
+        #div1{background: blue;}
+        #div2{background: rebeccapurple;} */
+
+        /*.box{background: red;}
+         p.box{background: red;}
+        .aaa{font-size: 50px;} */
+
+        /* p,h2,div{background-color: aqua; font-size: 50px;}
+        #text,.title,div{background-color: rgb(37, 100, 100); font-size: 50px;} */
+
+        /* *{border: red dotted;} */
+
+        /* #list li{border: red 3px solid;}
+        #list > li{border: red 3px solid;} */
+
+        /* div~p{background: red;}
+        div+p{background: red;} */
+
+        /* div[class]{background: red;}
+        div[class=box]{background: rebeccapurple;}
+        div[class=search]{background: red;}
+        div[class*=search]{background: red;}   全部
+        div[class^=search]{background: red;}   起始
+        div[class$=search]{background: red;}   结束 */
+
+        /* div[class][id]{background: red;} */
+
+        /* div{width: 300px; height: 300px; background: red;}
+        div:hover{background: blue;}
+        div:active{background: black;} */
+        
+        /* a{color: red;}
+        a:hover{color: green;} */
+
+        /* div:after{content:" world"; color: aqua;}     
+        div::before{content:" world "; color: blueviolet;} */
+        
+        :checked{width: 100px;height: 100px;}
+        :disabled{width: 100px; height: 100px;}
+        :focus{background: rebeccapurple;}
+    </style>
+</head>
+<body>
+    <!-- <div id="div1">打赏阿斯顿</div>
+    <div id="div2"></div>
+    <div class="box">这</div>
+    <div class="box">过热热后台人</div>
+    <p class="box aaa">位</p> -->
+
+    <!-- <div>撒旦阿斯顿</div>
+    <p id="text">打算擦拭啊</p>
+    <h2 class="title">惊愕万分排</h2> -->
+
+    <!-- <ul id="list">
+        <li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol> -->
+
+    <!-- <div>擦擦破安排我</div>
+    <p>擦建瓯市安排</p>
+    <h2>打我七年我看完</h2> -->
+
+    <!-- <div>aaaaaa</div>
+    <div class="box" id="aaa">aaaaaa</div>
+    <div class="search">aaaaaa</div>
+    <div class="search-aaa" id="bbb">aaaaaa</div>
+    <div class="aaa-search">aaaaaa</div> -->
+
+    <!-- <a href="#">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</a> -->
+    <!-- <div>hello</div> -->
+
+        <input type="checkbox">
+        <input type="checkbox" checked>
+        <input type="checkbox" disabled>
+        <input type="text">
+
+</body>
+</html>
+
+
+
+
+
+    <!--1. id选择器 -->
+    <!--               id=”demo“      #demo
+    id是唯一值，每个页面出现一次，出现多次不规范
+    命名的规范，字母、下划线、中划线、字母（并且第一个不能是数字）
+    命名方式:驼峰式(尽量小驼峰)、下划线（ _ ）、中划线（ - ）  -->
+
+    <!--2. class选择器 -->
+    <!--          class="demo"    .demo
+    class选择器可以重复使用
+    可以添加多个class样式
+    多个样式的时候 CSS决定优先
+    标签+类的写法        -->
+
+    <!--3. 标签选择器（TAG选择器、元素选择器） -->
+     <!--            div{ }    <div></div>
+    使用场景：1.去掉某些标签的默认样式时。2.复杂的选择器中（层次选择器） -->
+
+    <!--4. 群组选择器(分组选择器) -->
+    <!--             css ：div，p，span
+    可以通过都好方式给多个不同选择器添加统一的CSS样式，达到代码的重复使用 -->
+
+    <!--5. 通配选择器 -->
+    <!--              *{} -> div,ul,li,p,h1,h2....{}
+    尽量避免使用统配选择器，会给所有标签使用样式，慎用！
+    使用场景： 1.去掉所有标签的默认样式时 -->
+
+    <!--6. 层次选择器 -->
+    <!-- 后代 M N { }
+    父子 M > N { }
+    兄弟 M ~ N { }    当前M下面的所有兄弟N标签
+    相邻 M + N { }    当前M下面相邻的N标签 -->
+
+    <!--7.属性选择器 -->
+    <!--                M [attr] { }
+    = : 完全匹配
+    *= : 部分匹配
+    ^= ：起始匹配
+    $= : 结束匹配
+    [][][] ：组合匹配 -->
+
+    <!--8.伪类选择器（用来实现特殊功能） -->
+    <!--        M:伪类{ }    必须按顺序！！！！！
+    :link      访问前的样式        （只添加给a标签）
+    :visited   访问后的样式        （只添加给a标签）
+    :hover     鼠标移入时的样式     (可以添加给所有标签)
+    :active    鼠标按下时的样式     (可以添加给所有标签)
+
+    :after、:before      通过伪类方式给元素添加一些文本内容
+    :checked  :disabled  :focus     都针对表单元素  -->
+
+    
+    
+
+

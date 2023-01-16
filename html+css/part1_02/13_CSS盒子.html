@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #box{
+            width: 300px; height: 300px; 
+            background: red; 
+            border: 10px green solid;
+            padding-top: 100px;
+            margin: 10px;
+        }
+        #box2{
+            width: 200px;height: 200px;
+            background: gray;
+            
+        } */
+
+        #box{
+            width: 300px; height: 300px; 
+            background: red; 
+            border: 10px green solid;
+            padding: 30px 50px ;
+            box-sizing: border-box;
+        }
+        
+        input{width: 100%; padding: 50px; box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <!-- <div id="box">这是一个盒子</div>
+    <div id="box2">这又是一个盒子</div> -->
+
+    <div id="box">这是一个盒子</div>
+    <input type="text">
+</body>
+</html>
+
+
+
+    <!-- 组成 : content -> padding -> border -> margin
+            物品       填充物     包装盒    盒子与盒子间的距离
+
+            content  :  内容区域  width和height组成的
+            padding  :  内边距（内填充）
+                只写一个值  :  30px  （上下左右） 
+                两个值      ： 30px 40px （上下、左右）
+                三个值      :  30px 40px 50px 60px (上、右、下、左)
+            单一样式只能写一个值：
+            padding-left
+            padding-right
+            padding-top
+            padding-bottom
+
+            margin  :  外边距（外填充）
+                只写一个值  :  30px  （上下左右） 
+                两个值      ： 30px 40px （上下、左右）
+                三个值      :  30px 40px 50px 60px (上、右、下、左)
+            单一样式只能写一个值：
+                margin-left
+                margin-right
+                margin-top
+                margin-bottom
+
+            注：
+                1.背景色填充到margin以内的区域 （不包括margin区域）
+                2.文字在content区域添加
+                3.padding不能为负数，margin可以为负数 -->
+            
+    <!-- box-sizing:
+            盒尺寸，可以改变盒子模型的展示形态。
+            默认值：content-box : width、height、 -> content
+            border-box : width、height -> conetnt  padding  border
+            使用场景：
+                1.不用再去计算一些值
+                2.解决一些百分比问题 -->
+
+

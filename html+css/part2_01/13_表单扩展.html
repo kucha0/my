@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 美化控件 */
+        label input{display: none;}
+        label input:checked + div{background-position: 186px 565px;}
+        label div{width: 28px;height: 28px;background: url(../D1/img/111.jpg) 0 -28px;}
+        label input{display: none;}
+        label div{width: 86px;height: 34px;background: url('../D1/img/555.jpg');}
+
+        .upload{width: 86px;height: 34px;position: relative;}
+        .upload div{width: 100%;height: 100%;background: url(../D1/img/111.jpg);}
+        .upload input{width: 100%;height: 100%;position: absolute;left: 0;top: 0;opacity: 0;}
+
+    </style>
+</head>
+<body>
+    <!-- 美化控件 -->
+    <label>
+        <input type="checkbox">
+        <div></div>
+    </label>
+    <label>
+        <input type="file">
+        <div>选择</div>
+    </label>
+    <div class="upload">
+        <input type="file">
+        <div></div>
+    </div>
+
+    <!-- <form action="http://www.baidu.com"> -->
+        <!-- <input type="email"> -->
+        <!-- <input type="url"> -->
+        <!-- <input type="number"> -->
+        <!-- <input type="range"> -->
+        <!-- <input type="date"> -->
+        <!-- <input type="month"> -->
+        <!-- <input type="week"> -->
+        <!-- <input type="search"> -->
+        <!-- <input type="color"> -->
+        <!-- <input type="tel"> -->
+        <!-- <input type="time"> -->
+        <!-- <input type="submit"> -->
+    <!-- </form> -->
+
+    <!-- <form action="https://www.baidu.com">
+        <input type="text" name="username" autocomplete="off" autofocus required pattern="[a-z]+">
+
+        <input type="submit">
+    </form> -->
+
+    <fieldset>
+        <legend>登录</legend>
+        <p>
+            用户名:<input type="username">
+        </p>
+        <p>
+            密码:<input type="password">
+        </p>
+    </fieldset>
+    <select name="" id="">
+        <optgroup label="水果"></optgroup>
+        <option value="">苹果</option>
+        <option value="">香蕉</option>
+        <option value="">橘子</option>
+        <optgroup label="蔬菜"></optgroup>
+        <option value="">黄瓜</option>
+        <option value="">白菜</option>
+        <option value="">茄子</option>
+    </select>
+
+</body>
+</html>
+
+    <!-- 
+    1.美化表单控件
+        练习:
+            1.美化复选框
+            2.美化上传按钮 
+        -->
+    <!-- 
+    2.新的input控件
+        email               :  电子邮件地址输入框
+        url                 :  网址输入框
+        number              :  数值输入框
+        range               :  滑动条
+        date / month / week :  日期控件
+        search              :  搜索框
+        color               :  颜色控件
+        tel                 :  电话号码输入框 (在移动端会默认调起数字键盘)
+        time                :  时间控件 
+    -->
+    <!-- 
+    3.新的表单属性
+        autocomplete   :  自动完成
+        autofocus      :  获取焦点
+        required       :  不能为空
+        pattern        :  正则验证 (/d+    [a-z]+)
+        method         :  数据传输方式
+        enctype        :  数据传输类型
+        name / value   :  数据的键值对
+    -->
+    <!-- 
+    4.扩展标签
+        fieldset    :  表单内元素分组
+        legend      :  为fieldset元素定义标题
+        optgroup    :  定义选项组 
+    -->
+

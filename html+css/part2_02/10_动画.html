@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{width: 300px;height: 300px;border: 1px black solid;margin: 30px auto;}
+        /* .box2{width: 100px;height: 100px;background: red;
+            animation-name: mybox;
+            animation-duration: 3s;
+            animation-delay: -1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        } */
+        .box2{width: 100px;height: 100px;background: red;
+            animation: mybox 3s 1s infinite linear;
+        }
+
+        @keyframes mybox{
+            /* from{ transform: translate(0,0); }
+            to{ transform: translate(200px,0); } */
+            0%{ transform: translate(0,0); }
+            25%{ transform: translate(200px,0); }
+            50%{ transform: translate(200px,200px); }
+            75%{ transform: translate(0,200px); }
+            100%{ transform: translate(0,0); }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+animation动画
+    animation-name: 设置动画的名字(自定义的)
+    animation-duration:动画的持续时间
+    animation-delay:动画的延迟时间
+    animation-iteration-count:动画的重复次数，默认值就是1,infinite无限次数
+    animation-timing-function:动画的运动形式
+
+    注：
+        1、运动结束后，默认情况下会停留在起始位置。
+        2、@keyframes : from -> 0% , to -> 100%
+     -->

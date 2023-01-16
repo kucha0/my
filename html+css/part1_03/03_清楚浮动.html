@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #box1{width: 100px;height: 100px;background: red;float: right;}
+        #box2{width: 200px;height: 200px;background: blue;clear: both;} */
+
+        /* #box1{width: 200px;border: 1px black solid;}
+        #box2{width: 100px;height: 200px;background: red;float: left;}
+        .clear{clear: both;} */
+
+        #box1{width: 200px;border: 1px black solid;}
+        #box2{width: 100px;height: 200px;background: red;float: left;}
+        .clear::after{content: ' ';clear: both;display: block;}
+    </style>
+</head>
+<body>
+        <!-- <div id="box1"></div>
+        <div id="box2"></div> -->
+
+        <!-- <div id="box1">
+            <div id="box2"></div>
+            <div class="clear"></div>
+        </div>
+        aaaaaaaaa -->
+
+        <div id="box1" class="clear">
+            <div id="box2"></div>
+        </div>
+        aaaaaaaaa
+</body>
+</html>
+
+<!-- 
+如何清除浮动
+    上下排列：clear属性，表示清除浮动的：left 、right 、both
+    嵌套排列：
+        固定宽高: 不推荐 ，不能把高度固定死，不适合做自适应的效果。
+        父元素浮动 :不推荐 ，因为父容器浮动也会影响到后面的元素。
+        overflow : hidden (BFC规范) ，如果有子元素想溢出，那么会受到影响。
+        display : inline-block(BFC规范)，不推荐，父容器会影响到后面的元素
+        设置空标签 :不推荐 ，会多添加一个标签。
+        after伪类 : 推荐，是空标签的加强版，目前各大公司的做法 
+        （clear属性只会操作快标签，对内联不起作用）
+    -->

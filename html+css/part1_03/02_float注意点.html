@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{width: 100px;height: 100px; background: yellow;}
+        #box2{width: 200px;height: 200px; background: red; float: left; }
+        #box3{width: 300px;height: 300px; background: blue; }
+        #box4{background: green; float: left;}
+
+
+        ul{margin: 0; padding: 0; list-style: none;width: 300px;height: 300px;border: 1px black solid; }
+        li{width: 100px; height: 100px; background: red; border: 1px yellow solid; box-sizing: border-box;float: left;}
+        li:nth-of-type(1){height: 120px;}
+        li:nth-of-type(2){height: 130px;}
+        li:nth-of-type(3){height: 170px;}
+        span:last-of-type{float: right;}
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3">企鹅企鹅舞请问阿三企鹅舞请问阿三发给阿达企鹅舞请问阿三企鹅舞请问阿三发给阿达发给阿达发给阿达舞请企鹅舞请问阿三发给阿达企鹅舞请问阿三发给阿达问阿三发给阿达</div>
+    <div id="box4">企鹅舞请问阿三发给阿达</div>
+
+    <br><br><br><br><br>
+
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <span>asdasdad</span><span>cxzczcxzxc</span>
+</body>
+</html>
+
+<!-- 
+float注意点
+    只会影响后面的元素
+    内容默认提升半层
+    默认宽根据内容决定
+    换行排列
+    主要给块元素添加，但是也可以给内联元素添加 -->
+

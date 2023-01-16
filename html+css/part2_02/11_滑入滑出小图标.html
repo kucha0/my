@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        ul{width: 500px;margin: 100px auto;}
+        ul li{float: left;width: 100px;height: 100px;position: relative;margin-left: 20px;}
+        ul li img{width: 100px;height: 100px; position: absolute;left: 50%;top: 50%;margin: -50px 0 0 -50px;}
+        ul li:hover{animation: move 1s;}
+        @keyframes move{
+            0%{transform: translate(0,0);opacity: 1;}
+            60%{transform: translate(0,-80px);opacity: 0;}
+            61%{transform: translate(0,50px);}
+            100%{transform: translate(0,0);opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <img src="../part1_01/img/333.jpg" alt="">
+        </li>
+        <li>
+            <img src="../part1_01/img/222.jpg" alt="">
+        </li>
+        <li>
+            <img src="../part1_01/img/111.jpg" alt="">
+        </li>
+    </ul>
+</body>
+</html>

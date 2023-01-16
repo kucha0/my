@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{width: 100px;height: 100px;background: red;transition: 1s;transform-origin: 0 100px;}
+        .box1:hover{transform: scale(.5);}
+        /* .box2{width: 100px;height: 100px;background: red;transform: translate(100px,0)scale(.5);}
+        .box3{width: 100px;height: 100px;background: red;transform:scale(.5) translate(100px,0);} */
+        /* .box2{width: 100px;height: 100px;background: red;transform: translate(100px,0)rotate(45deg);}
+        .box3{width: 100px;height: 100px;background: red;transform:rotate(45deg) translate(100px,0);} */
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
+
+<!-- 
+transform的注意事项:
+    1.变形操作不会影响到其他元素。
+    2.变形操作只能添加给块元素，但是不能添加给内联元素。
+    3.复合写法，可以同时添加多个变形操作。
+        执行是有顺序的，先执行后面的操作，再执行前面的操作。
+        translate会受到rotate、scale、skew影响
+    4.transform-origin : 基点的位置
+        x y z(3d)
+     -->

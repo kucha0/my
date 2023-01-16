@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,.box2,.box3,.box4{width:100px;height:100px;background: red;margin: 5px ;}
+        .box1{animation: 2s move 2s;}
+        .box2{animation: 2s move 2s;animation-fill-mode: backwards;}
+        .box3{animation: 2s move 2s;animation-fill-mode: forwards;}
+        .box4{animation: 2s move 2s;animation-fill-mode: both;}
+        @keyframes move{
+            0%{transform: translate(0,0);background: blue;}
+            100%{transform: translate(300px,0);}
+        }
+
+        div{width:100px;height:100px;animation: 1s move infinite;background: red;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes move{
+            0%{transform: translate(0,0);}
+            100%{transform: translate(300px,0);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+    <div></div>
+</body>
+</html>
+
+
+<!-- 
+    animation-fill-mode  :  规定动画指放之前或之后，其动画效果是否可见。
+        none (默认值)  :  在运动结束之后回到初始位置，在延迟的情况下，让0%在延迟后生效
+        backwards  :  在延迟的情况下，让0%在延退前生效
+        forwards  :  在运动结束的之后，停到结束位置
+        both  :  backwards和forwards同时生效
+
+    animation-direction  :  属性定义是否应该轮流反向播放动画
+        alternate  :  一次正向(0%~100%)，一次反向(100%~0%)
+        reverse  :  永远都是反向 ，从100%~0%
+        normal (默认值)  :  永远都是正向 ，从0%~100%
+     -->

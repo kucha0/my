@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 300px;height: 400px;
+        border: 1px black solid;background: url(../part1_01/img/111.jpg) no-repeat;
+        /* background-size: 100px 100px; */
+        /* background-size: cover; */
+        background-size: contain;
+    }
+        .box2{width: 300px;height: 400px;border: 40px solid rgba(0,0,0,.5);
+        padding: 30px;background: url(../part1_01/img/111.jpg);
+        /* background-origin: border-box; */
+        /* background-origin: content-box; */
+        /* background-origin: padding-box; */
+        /* background-clip: padding-box; */
+        /* background-clip: content-box; */
+        background-clip: border-box;
+    }
+        .box3{width: 300px;height: 400px;border: 40px solid rgba(0,0,0,.5);
+        padding: 30px;background: url(../part1_01/img/111.jpg) content-box padding-box;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
+
+<!-- 
+CSS提供了扩展样式？
+    background-size:背景图的尺寸大小
+        cover: 覆盖
+        contain:包含
+    background-origin:背景图的填充位置
+        padding-box(默认)
+        border-box
+        content-box
+    background-clip:背景图的裁切方式
+        padding-box
+        border-box(默认)
+        content-box
+
+    注:复合样式的时候，第一个是位置，第二个是裁切
+         -->

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除默认 */
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        img{display: block;}
+        a{text-decoration: none;color: #666;}
+        h1,h2,h3{font-size: 16px;}
+        .l{float: left;}
+        .r{float: right;}
+        .clear::after{content: "";display: block; clear: both;}
+
+        #main{width: 366px; margin: 20px auto;}
+        #main .title{height: 23px; line-height: 23px;font-size: 12px;font-weight: bold;padding-left: 30px;background:url(./img/bg_title.png) no-repeat 6px 4px,url(./img/bg_line.png)repeat-x;}
+        #main ul{overflow: hidden; margin-top: 13px;}
+        #main li{margin-bottom: 10px;}
+        #main .pic{width: 106px;border: 1px solid gray; margin-left: 6px;}
+        #main .pic.img{ margin: 2px;}
+        #main .content{width: 240px; margin-left: 12px;}
+        #main .content h2{ font-size: 12px;line-height: 24px;}
+        #main .content p{ font-size: 12px; line-height: 20px;}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <!-- 标题 -->
+        <h2 class="title">外媒评论精选</h2>
+        <!-- 第一段 -->
+        <ul>
+            <li class="clear">
+                <div class="l pic">
+                    <a href="#">
+                        <img src="./img/img1.png" alt="">
+                    </a>
+                </div>
+                <div class="l content">
+                    <h2>《加勤比海盗4》一一商业味依郁</h2>
+                    <p>本集《加勒比海盗》讲述了杰克船长受讲述了英王所托寻找“不老泉”，与他...<a href="#">[详细]</a></p>
+                </div>
+            </li>
+        </ul>
+        <!-- 第二段 -->
+        <ul>
+            <li class="clear">
+                <div class="l pic">
+                    <a href="#">
+                        <img src="./img/img1.png" alt="">
+                    </a>
+                </div>
+                <div class="l content">
+                    <h2>《雷神托尔》一一神话版莎兹戏剧</h2>
+                    <p>由克里斯·海姆斯沃斯和今年新晋奥斯姆斯沃斯和今年卡影后娜塔莉·波特曼..<a href="#">[详细]</a></p>
+                </div>
+            </li>
+        </ul>
+        <!-- 第三段 -->
+        <ul>
+            <li class="clear">
+                <div class="l pic">
+                    <a href="#">
+                        <img src="./img/img1.png" alt="">
+                    </a>
+                </div>
+                <div class="l content">
+                    <h2>《熟代码》一一科幻惊悚完美结合</h2>
+                    <p>由杰克·吉论哈尔、米歌尔莫娜汉、维拉·法克·吉论哈尔、米歌尔莫梅加主演。..<a href="#">[详细]</a></p>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+    
+</body>
+</html>

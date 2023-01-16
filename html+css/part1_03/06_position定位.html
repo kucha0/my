@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{height: 2000px;}
+        /* #box1{width: 100px;height: 100px;background: red;}
+        #box2{width: 100px;height: 100px;background: blue;position: relative;left: 100px;}
+        #box3{width: 100px;height: 100px;background: yellow;} */
+        /* #box1{width: 100px;height: 100px;background: red;position: absolute;}
+        #box2{width: 200px;height: 200px;background: blue;} */
+        /* span{width: 100px;height: 100px;background: red;position: absolute;}
+        div{background: red;position: absolute;left: 100px;} */
+        /* #box1{width: 300px;height: 300px;border: 1px black solid; margin: 100px;position: relative;}
+        #box2{width: 100px; height: 100px;background: red;position: absolute;right: 0;bottom: 0;} */
+        /* div{position: fixed;bottom: 0;right: 0;} */
+        /* #box1{width: 300px;height: 300px;border: 1px black solid; margin: 100px;position: relative;}
+        #box2{width: 100px; height: 100px;background: red;position: fixed;right: 0;bottom: 0;} */
+        /* div{background: red;position: sticky; top: 0;} */
+        /* #box1{width: 100px;height: 100px;background: red;position: absolute;z-index: 0;}
+        #box2{width: 100px;height: 100px;background: blue;position: absolute;left: 50px;top: 50px;} */
+        #parent{width: 100px;height: 100px;border: 1px black solid;position: absolute;}
+        #box1{width: 100px;height: 100px;background: red;position: absolute;z-index: 1;}
+        #box2{width: 100px;height: 100px;background: blue;position: absolute;left: 50px;top: 50px;}
+    </style>
+</head>
+<body>
+    <!-- <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div> -->
+    <!-- <div id="box1"></div>
+    <div id="box2"></div> -->
+        <!-- <span>这是一个内联</span> -->
+        <!-- <div>这是一个块</div> -->
+        <!-- <div id="box1">
+            <div id="box2"></div>
+        </div> -->
+        <!-- <div>这是个酷开</div> -->
+        <!-- <div id="box1">
+            <div id="box2"></div>
+        </div> -->
+        <!-- <p>aaaaaaaa</p>
+        <p>aaaaaaaa</p>
+        <p>aaaaaaaa</p>
+        <p>aaaaaaaa</p>
+        <p>aaaaaaaa</p>
+        <p>aaaaaaaa</p>
+        <div>这是一个块</div>
+        <p>aaaaaaaa</p>
+        <p>aaaaaaaa</p>
+        <p>aaaaaaaa</p>
+        <p>aaaaaaaa</p>
+        <p>aaaaaaaa</p>
+        <p>aaaaaaaa</p> -->
+        <!-- <div id="box1"></div>
+        <div id="box2"></div> -->
+        <div id="parent">
+        <div id="box1"></div>
+    </div>
+    <div id="box2"></div>
+</body>
+</html>
+
+<!-- 
+ 3.CSS 定位?
+    position :
+        static (默认)
+        relative
+        absolute
+        fixed
+        sticky
+    relative  相对定位:
+        如果没有定位偏移量，对元素本身没有任何影响
+        不使元素脱离文档流
+        不影响  其他元素布局
+        left、top、right、bottom是相对于当前元素自身进行偏移的
+    absplute  绝对定位:
+        使元素完全脱离文档流
+        使内联元素支持宽高 (让内联具备块特性)
+        使块元素默认宽根据内容决定《让块具备内联的特性)
+        如果有定位祖先元素相对于定位祖先元素发生偏移，没有定位祖先元素相对于整个文档发生偏移(绝对、相对、固定)
+    fixed  固定定位:
+        使元素完全脱高文档流
+        使内联元素支持宽高 (让内联具备块特性)
+        使块元素默认宽根据内容决定(让块具备内联的特性)
+        相对于整个浏览器窗口进行偏移，不受浏览器滚动条的影响
+    sticky  黏性定位:
+        在指定的位置，进行黏性操作。
+    
+ -->

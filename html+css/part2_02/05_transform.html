@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{width: 300px;height: 300px;border: 1px black solid;margin: 30px auto;}
+        .box2{width: 100px;height: 100px;background: red;transition: 1s;}
+        .box1:hover .box2{
+            /* transform: translate(100px,50px); */
+            /* transform: translatey(100px); */
+            /* transform: scale(2); */
+            /* transform: scalex(2); */
+            /* transform: rotatez(90deg); */
+            /* transform: skew(30deg,30deg); */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <p>sad</p>
+    </div>
+</body>
+</html>
+
+<!-- 
+transform交形?
+
+    translate :位称
+        translatex
+        translatey
+        translatez(3d)
+
+    scale : 缩放 (值是一个比例值，正常大小就是1，会已当前元素中心点进行缩放)
+        scalex
+        scaleY
+        scalez(3d)
+
+    rotate :旋转 (旋转的值，单位是角度 deg )
+        rotatex(3d)
+        rotatey(3d)
+        rotatez(和rotate是等级关系，那正值按顺时针旋转，负值按逆时针旋转)
+    
+    skew : 斜切
+        skewX : 单位也是角度，正值向左倾料，负值向右倾斜
+        skewY :
+
+
+    -->

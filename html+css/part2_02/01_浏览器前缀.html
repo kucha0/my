@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{width: 200px;height: 200px;background: red;-webkit-animation: 1s move;}
+        @keyframes move{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        } */
+        div{width: 200px;height: 200px;background: red;-webkit-animation: 1s move;}
+        @-webkit-keyframes move{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+<!-- 
+    浏览器前缀?
+        CSS3去兼容不同的浏览器，针对旧的浏览器做兼容，新浏览器基本不需要添加前缀
+        
++—————————————————————————————————————————————+
+    浏览器           内核            前缀
+      IE           Trident          -ms-
+    Firefox         Gecko           -moz-
+    Opera           Presto          -o-
+    Chrome          Webkit        -webkit-
+    Safari          Webkit        -webkit-
+ Opera、Chrome       Blink           
++—————————————————————————————————————————————+ 
+-->

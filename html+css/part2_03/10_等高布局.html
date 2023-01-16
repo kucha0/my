@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        /* #parent{border: 10px black solid;overflow: hidden;}
+        #box1{float: left;width: 100px;height: 100px;background: red;}
+        #box2{float: right;width: 100px;height: 300px;background: blue;} */
+        #parent{border: 10px black solid;overflow: hidden;}
+        #box1{float: left; width: 100px;background: red;
+            margin-bottom: -1000px;padding-bottom: 1000px;}
+        #box2{float: right;width: 100px;background: blue;
+            margin-bottom: -1000px;padding-bottom: 1000px;}
+        /* #box2{width: 100px;height: 100px;background: blue;} */
+    </style>
+    
+</head>
+<body>
+    <div id="parent">
+        <div id="box1">
+            <p>11111</p>
+            <p>11111</p>
+            <p>11111</p>
+
+        </div>
+        <div id="box2">
+            <p>22222</p>
+            <p>22222</p>
+            <p>22222</p>
+            <p>22222</p>
+            <p>22222</p>
+            <p>22222</p>
+            <p>22222</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+1，等高布局
+    利用margin-bottom负值与padding-bottom配合实现
+
+    三列布局，左右固定，中间自适应
+    1.BFC方式
+    2.定位
+    3.浮动( 双飞翼布局、圣杯布局 )
+        margin负值
+    4.flex弹性 
+-->
