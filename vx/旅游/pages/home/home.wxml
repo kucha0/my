@@ -1,0 +1,307 @@
+<view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>旅行</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>圈子</view>
+</view>
+
+
+
+<swiper current="{{currentData}}" class='swiper' duration="300" bindchange="bindchange">
+  <swiper-item>
+  <view class='swiper_con'>
+
+
+    <view class="sous">
+   <view class="sous_one">
+         <icon class="in_box" type="search" size="30rpx"></icon>
+         <input type="text" class="sous_input" placeholder="请输入内容"/>
+       </view>
+   <view class="sous_text">搜索</view>
+</view>
+
+
+
+
+
+
+
+<swiper class="container1" circular="false" autoplay="false" interval="3000">
+  <swiper-item>
+    <view class="item">
+      <image src="/images/homeimg/one.jpg" mode="widthFix"></image>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="item">
+      <image src="/images/homeimg/two.jpg" mode="widthFix"></image>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="item">
+      <image src="/images/homeimg/three.jpg" mode="widthFix"></image>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="item">
+      <image src="/images/homeimg/four.jpg" mode="widthFix"></image>
+    </view>
+  </swiper-item>  
+</swiper>
+
+
+
+
+
+
+
+
+
+<swiper class="bu" indicator-dots="false">
+     <swiper-item>
+         <view class="bu_one">
+             <view class="bu_bottom">
+                 <view class="bu_bottom_image">
+                     <image src='/images/homeimg/qi.png' mode="aspectFit"/>
+                 </view>
+                 <view class="bu_bottom_image">
+                     <image src='/images/homeimg/zh.png' mode="aspectFit"/>
+                 </view>
+                 <view class="bu_bottom_image">
+                     <image src='/images/homeimg/zo.png' mode="aspectFit"/>
+                 </view>
+             </view>
+             <view class="bu_top">
+                 <view class="bu_top_view">
+                     <textarea class="a1" placeholder="起点"></textarea> 
+                 </view>
+                 <view class="bu_top_view"></view>
+
+                 <view class="bu_top_view">
+                  <textarea class="a1" placeholder="终点"></textarea> 
+                 </view>
+      
+             </view>
+         </view>
+     </swiper-item>
+
+     
+     <swiper-item>        
+         <view class="bu_one">
+             <view class="bu_bottom">
+                 <view class="bu_bottom_image">
+                     <image src='/images/homeimg/bend.png' mode="aspectFit"/>
+                 </view>
+                 <view class="bu_bottom_image">
+                     <image src='/images/homeimg/ksan.png' mode="aspectFit"/>
+                 </view>
+                 <view class="bu_bottom_image">
+                     <image src='/images/homeimg/jd.png' mode="aspectFit"/>
+                 </view>
+                 <view class="bu_bottom_image">
+                     <image src='/images/homeimg/wd.png' mode="aspectFit"/>
+                 </view>
+                 <view class="bu_bottom_image">
+                     <image src='/images/homeimg/zj.png' mode="aspectFit"/>
+                 </view>
+
+             </view>
+             <view class="bu_top">
+                 <view class="bu_top_view">
+                     <text>本地</text> 
+                 </view>
+                 <view class="bu_top_view">
+                     <text>名胜</text>
+                 </view>
+                 <view class="bu_top_view">
+                     <text>酒店</text>
+                 </view>
+                 <view class="bu_top_view">
+                     <text>问答</text>
+                 </view>
+                 <view class="bu_top_view">
+                     <text>最近</text>
+                 </view>
+             </view>
+         </view>
+     </swiper-item>
+</swiper>
+
+
+
+
+
+
+
+
+<view class="wd">
+    <view class="bu_bottom">
+        <view class="title">出行方式</view>
+            <view class="detail2">
+             <text>更多 ></text>
+        </view>
+    </view>
+    <view class="bu_top">
+       <view>
+         <image src="/images/homeimg/db.png" mode="aspectFit"></image>
+         <p>汽车</p>
+       </view>
+
+       <view>
+         <image src="/images/homeimg/hc.png" mode="aspectFit"></image>
+         <p>高铁</p>
+       </view>
+
+       <view>
+         <image src="/images/homeimg/chuan.png" mode="aspectFit"></image>
+         <p>船</p>
+       </view>
+
+       <view>
+         <image src="/images/homeimg/fj.png" mode="aspectFit"></image>
+         <p>飞机</p>
+       </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<view class="liushi">
+    <view class="waterfall">
+
+  <scroll-view scroll-y="true">
+   <view class="pin">
+        <image src="/images/homeimg/bmy.jpg" mode="aspectFill"></image>
+             <text>兵马俑</text>
+             <text>兵马俑，即秦始皇陵兵马俑，亦简称秦兵马俑或秦俑，是第一批全国重点文物保护单位、第一批中国世界遗产，位于今陕西省西安市临潼区秦始皇陵以东1.5千米处的兵马俑坑内。</text>
+     </view>
+  </scroll-view>
+
+
+
+
+  <scroll-view scroll-y="true">
+   <view class="pin">
+        <image src="/images/homeimg/xh.jpg" mode="aspectFill"></image>
+             <text>西湖 </text>
+             <text>西湖，位于浙江省杭州市西湖区龙井路1号，杭州市区西部，西湖景区总面积49平方千米，汇水面积为21.22平方千米，湖面面积为6.38平方千米。</text>
+     </view>
+  </scroll-view>
+
+
+
+  <scroll-view scroll-y="true">
+   <view class="pin">
+        <image src="/images/homeimg/gl.jpg" mode="aspectFill"></image>
+             <text>桂林山水</text>
+             <text>桂林山水是对桂林旅游资源的总称。国家5A级旅游景区，中国十大风景名胜之一，桂林山水是中国山水的代表闻名，千百年来享有“桂林山水甲天下”的美誉。</text>
+     </view>
+  </scroll-view>
+
+
+
+
+  <scroll-view scroll-y="true">
+   <view class="pin">
+        <image src="/images/homeimg/changc.jpg" mode="aspectFill"></image>
+             <text>北京故宫</text>
+             <text>北京故宫是中国明清两代的皇家宫殿，旧称紫禁城，位于北京中轴线的中心。北京故宫以三大殿为中心，占地面积约72万平方米，建筑面积约15万平方米，有大小宫殿七十多座，房屋九千余间。</text>
+     </view>
+  </scroll-view>
+
+
+
+
+  <scroll-view scroll-y="true">
+   <view class="pin">
+        <image src="/images/homeimg/cc.jpg" mode="aspectFill"></image>
+             <text>长城 </text>
+             <text>长城（the Great Wall），又称万里长城，是中国古代的军事防御工事，是一道高大、坚固而且连绵不断的长垣，用以限隔敌骑的行动。长城不是一道单纯孤立的城墙，而是以城墙为主体，同大量的城、障、亭、标相结合的防御体系。</text>
+     </view>
+  </scroll-view>
+    
+
+
+
+  <scroll-view scroll-y="true">
+   <view class="pin">
+        <image src="/images/homeimg/xz.jpg" mode="aspectFill"></image>
+             <text>布达拉宫</text>
+             <text>布达拉宫位于中国西藏自治区首府拉萨市区西北的玛布日山上，是一座宫堡式建筑群，最初是吐蕃王朝赞普松赞干布为迎娶文成公主而兴建。于17世纪重建后，成为历代达赖喇嘛的冬宫居所，为西藏政教合一的统治中心。</text>
+     </view>
+  </scroll-view>
+
+
+
+    </view>
+</view>
+  
+  </view>
+  </swiper-item> 
+     <swiper-item>
+       <view class='swiper_con'>
+        <view class="shous">
+   <view class="shous_one">
+         <icon class="ino_box" type="search" size="30rpx"></icon>
+         <input type="text" class="shous_input" placeholder="请输入内容"/>
+       </view>
+</view>
+
+
+<view class="lius">
+    <view class="waterf">
+
+
+     <view class="ping">
+        <image src="/images/homeimg/you.jpg" mode="widthFix"></image>
+             <p>一场说走就走的的旅行，要么缘由幸福稳定和宽裕，要么祸起无力无奈和逃避。而我，就是为了和你牵牵手一起旅行。</p>
+     </view>
+
+
+     <view class="ping">
+        <image src="/images/homeimg/you(1).jpg" mode="widthFix"></image>
+             <p>有时我们选择改变，并非经过深思熟虑，而更像是听见了天地间冥冥中的呼唤，呼唤你前往另一个地方，过上另一种生活。你并不一定会从此拥有更美好的人生，可你仍然感谢天地和人世所带来的这些变化和发生。不然你大概会一直好奇和不甘吧——家门前的那条小路，到底通向了什么样的远方呢?</p>
+     </view>
+    
+
+
+
+     <view class="ping">
+        <image src="/images/homeimg/you(2).jpg" mode="widthFix"></image>
+             <p>如果不出去走走，你或许以为这就是世界。</p>
+     </view>
+
+    
+
+     <view class="ping">
+        <image src="/images/homeimg/you(3).jpg" mode="widthFix"></image>
+             <p>旅行可以放松自己的心情，宽阔自己的心境，忘掉不顺心，迎接新的开心。旅行是在寻找新的美丽，追逐新的感观世界，丢掉多余的自己，遇上最真实的自己。</p>
+     </view>
+
+    
+     <view class="ping">
+        <image src="/images/homeimg/you(4).jpg" mode="widthFix"></image>
+             <p>旅行的真谛，不是运动，而是带动你的灵魂，去寻找到生命的春光。</p>
+     </view>
+
+
+     <view class="ping">
+        <image src="/images/homeimg/you(5).jpg" mode="widthFix"></image>
+             <p>水洞的九曲银河是迄今世界上发现最长的地下暗河，它是数百万年前形成的大型石灰岩水溶洞。暗河长千米，洞内深邃宽阔，河水充沛，终年不竭，平均水深二米，最深处可达七米，钟乳石石笋千姿百态。我们乘船一共观赏了处景点：海底世界织女石玉女宫南水观音广寒宫北极宫仙丹石望儿归凤尾。</p>
+     </view>
+    </view>
+</view>
+        </view>
+     </swiper-item>
+  </swiper>

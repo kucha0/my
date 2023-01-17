@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/message/message",
+    "pages/contact/contact",
+    "pages/Thequery/Thequery",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "生活",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "消息",
+        "iconPath": "/images/tabs/atm.png",
+        "selectedIconPath": "/images/tabs/atm (1).png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "周边",
+        "iconPath": "/images/tabs/bussiness-man (1).png",
+        "selectedIconPath": "/images/tabs/bussiness-man.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "预警",
+        "iconPath": "/images/tabs/integral (1).png",
+        "selectedIconPath": "/images/tabs/integral.png"
+      },
+      {
+        "pagePath": "pages/Thequery/Thequery",
+        "text": "我的",
+        "iconPath": "/images/tabs/yujing.png",
+        "selectedIconPath": "/images/tabs/yujing(1).png"
+      }
+    ],
+    "color": "#BEBEBE",
+    "selectedColor": "#000000"
+  },
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "sitemapLocation": "sitemap.json"
+}

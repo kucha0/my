@@ -1,0 +1,54 @@
+<scroll-view class="content-info" scroll-y>
+<view class="one">账户设置</view>
+<view class="set">
+<button class="btn-set">
+<view>个人信息</view>
+<image src="/images/back (3).png"/>
+</button>
+<button class="btn-set">
+<view>账号信息</view>
+<image src="/images/back (3).png"/>
+</button>
+<button class="btn-set">
+<view>支付设置</view>
+<image src="/images/back (3).png"/>
+</button>
+</view>
+<view class="one">通用设置</view>
+<view class="set">
+<button class="btn-set">
+<view>个人主页</view>
+<image src="/images/back (3).png"/>
+</button>
+<button class="btn-set">
+<view>消息通知</view>
+<image src="/images/back (3).png"/>
+</button>
+<button class="btn-set-1">
+<view>零流量升级</view>
+<image src="/images/back (3).png"/>
+</button>
+<button class="btn-set-2">
+<view>使用移动网络改善内容浏览体验</view>
+<image src="/images/back (3).png"/>
+</button>
+</view>
+<view class="one">隐私设置</view>
+<view class="set">
+<button class="btn-set">
+<view>隐私设置</view>
+<image src="/images/back (3).png"/>
+</button>
+</view>
+<view class="one">个人信息收集与共享</view>
+<view class="set">
+<button class="btn-set-3">
+<view>个人信息收集清单</view>
+<image src="/images/back (3).png"/>
+</button>
+<button class="btn-set-4">
+<view>第三方共享个人信息清单</view>
+<image src="/images/back (3).png"/>
+</button>
+</view>
+</scroll-view>

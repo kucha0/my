@@ -1,0 +1,18 @@
+.banner{
+  position: absolute;
+  top: 20rpx;
+  left: 0;
+}
+.banner image{
+  width: 100vw;
+  height: 158rpx;
+}
+.gps{
+  position: absolute;
+  left: 20rpx;
+  bottom: 40rpx;
+}
+.gps image{
+  width: 100rpx;
+  height: 100rpx;
+}

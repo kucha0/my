@@ -1,0 +1,72 @@
+<view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>发现</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>玩乐</view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' data-current="2" bindtap='checkCurrent'>美食</view>
+    <view class='tab  {{currentData == 3 ? "tabBorer" : ""}}' data-current="3" bindtap='checkCurrent'>景点</view>
+</view>
+
+<swiper current="{{currentData}}" class='swiper' style="height:300vh;" duration="300" bindchange="bindchange">
+    <swiper-item>
+        <view class="found">
+            <view class="foundContent">
+                <video id="myVideo" src="{{src}}" danmu-list="{{danmuList}}"enable-danmu danmu-btn controls></video>
+                <view class="foundContent-text">呼和浩特旅游合集</view>
+            </view>
+            <view class="foundContent">
+                <video id="myVideo" src="{{src}}" danmu-list="{{danmuList}}"enable-danmu danmu-btn controls></video>
+                <view class="foundContent-text">呼和浩特旅游合集</view>
+            </view>
+            <view class="foundContent">
+                <video id="myVideo" src="{{src}}" danmu-list="{{danmuList}}"enable-danmu danmu-btn controls></video>
+                <view class="foundContent-text">呼和浩特旅游合集</view>
+            </view>
+            <view class="foundContent">
+                <video id="myVideo" src="{{src}}" danmu-list="{{danmuList}}"enable-danmu danmu-btn controls></video>
+                <view class="foundContent-text">呼和浩特旅游合集</view>
+            </view>
+        </view>
+    </swiper-item>
+    <swiper-item>
+        <view class="found">
+            <view class="foundContent">
+                <image class="foundContent-image" src="/images/1.jpg"></image>
+                <view class="foundContent-text">呼和浩特特色旅游景点</view>
+            </view>
+            <view class="foundContent">
+                <image class="foundContent-image" src="/images/2.jpg"></image>
+                <view class="foundContent-text">呼和浩特特色旅游景点</view>
+            </view>
+            <view class="foundContent">
+                <image class="foundContent-image" src="/images/3.jpg"></image>
+                <view class="foundContent-text">呼和浩特特色旅游景点</view>
+            </view>
+            <view class="foundContent">
+                <image class="foundContent-image" src="/images/4.jpg"></image>
+                <view class="foundContent-text">呼和浩特特色旅游景点</view>
+            </view>
+        </view>
+    </swiper-item>
+    <swiper-item>
+        <view class="found">
+            <view class="foundContent">
+                <image class="foundContent-image" src="/images/5.jpg"></image>
+                <view class="foundContent-text">内蒙古特色美食</view>
+            </view>
+            <view class="foundContent">
+                <image class="foundContent-image" src="/images/6.jpg"></image>
+                <view class="foundContent-text">内蒙古特色美食</view>
+            </view>
+            <view class="foundContent">
+                <image class="foundContent-image" src="/images/7.jpg"></image>
+                <view class="foundContent-text">内蒙古特色美食</view>
+            </view>
+            <view class="foundContent">
+                <image class="foundContent-image" src="/images/8.jpg"></image>
+                <view class="foundContent-text">内蒙古特色美食</view>
+            </view>
+        </view>
+    </swiper-item>
+    <swiper-item>
+    <include src="contactmap.wxml"/>
+    </swiper-item>
+</swiper>

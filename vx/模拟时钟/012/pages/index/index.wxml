@@ -1,0 +1,4 @@
+<view>
+  <canvas type="2d" canvas-id="myCanvas" class="mycancas"></canvas>
+</view>
+

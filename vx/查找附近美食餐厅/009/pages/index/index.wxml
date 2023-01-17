@@ -1,0 +1,8 @@
+<map bindcontroltap="bingControlTap" bindRegionchange="bindRegionchange" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" controls="{{controls}}" style="width: {{mapW}}; height: {{mapH}}; "scale="{{scale}}" show-location="">
+  <view bindtap="bindBannerTap" class="banner">
+  <image src="/images/banner.png"></image>
+</view>
+<view bindtap="bindGpsTap" class="gps">
+  <image src="/images/gps.png"></image>
+</view>
+</map>

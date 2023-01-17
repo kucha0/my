@@ -1,0 +1,3 @@
+<!--pages/map/map.wxml-->
+<map id="map" bindcontroltap="bindControlTap" bindregionchange="bindRegionChange" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" controls="{{controls}}" style="width: {{mapw}}; height: {{maph}}; scale: {{scale}}" show-location></map>
+

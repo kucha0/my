@@ -1,0 +1,119 @@
+<!--pages/person/person.wxml-->
+<view class="avatar1">
+  <view class="=touxiang">
+  <image src="/images/yonghu.png"></image>
+  </view>
+  <view class="yonghu">新用户!</view>
+  <view class="jianjie">简单的自我介绍，让你更受欢迎！
+  <image src="/images/jianjie.png"></image>
+  </view>
+  <view class="avatar2">
+    <view>
+      <view>粉丝 0</view>
+    </view>
+    <view>
+      <view>关注 0</view>
+    </view>
+    <view>
+      <view>获赞 0</view>
+    </view>
+    <view>
+      <view>赞过 0</view>
+    </view>
+  </view>
+</view>
+
+<view class="tab">
+  <view class="tab-item {{tab==0?'active':''}}" bindtap="changeItem" data-item="0">个人信息</view>
+  <view class="tab-item {{tab==1?'active':''}}" bindtap="changeItem" data-item="1">通用设置</view>
+</view>
+
+
+<view class="content">
+  <swiper current="{{item}}" bindchange="changeTab">
+    <swiper-item>
+      <scroll-view class="content-info" scroll-y>
+<view class="content1">
+  <view class="dingdan" bindtap="dingdan">
+    <image src="/images/dingdan.png"></image>
+    <view>全部订单</view>
+  </view>
+  <view>
+    <image src="/images/daifukuan.png"></image>
+    <view>待付款</view>
+  </view>
+  <view>
+    <image src="/images/weichuxing.png"></image>
+    <view>未出行</view>
+  </view>
+  <view>
+    <image src="/images/daipingjia.png"></image>
+    <view>待点评</view>
+  </view>
+</view>
+<view class="content2">
+  <view>
+  <view>0</view>
+  <view>我的收藏</view>
+  </view>
+  <view>
+  <view>0</view>
+  <view>浏览历史</view>
+  </view>
+  <view>
+  <view>0</view>
+  <view>积分</view>
+  </view>
+  <view>
+  <view>0</view>
+  <view>优惠券</view>
+  </view>
+</view>
+<view class="content3">
+  <view>
+    <image src="/images/xinxi.png"></image>
+    <view>常用信息</view>
+  </view>
+  <view>
+    <image src="/images/jiangpin.png"></image>
+    <view>我的奖品</view>
+  </view>
+  <view>
+    <image src="/images/jilu.png"></image>
+    <view>出行清单</view>
+  </view>
+  <view>
+    <image src="/images/zuji.png"></image>
+    <view>旅行足迹</view>
+  </view>
+</view>
+<view class="content4">
+  <view>
+    <image src="/images/dingyue.png"></image>
+    <view>订阅</view>
+  </view>
+  <view bindtap="kefu">
+    <image src="/images/kefu.png"></image>
+    <view>客服</view>
+  </view>
+  <view>
+    <image src="/images/diaoyan.png"></image>
+    <view>用户调研</view>
+  </view>
+  <view>
+    <image src="/images/chuangcuo.png"></image>
+    <view>创作中心</view>
+  </view>
+</view>
+<view class="content5">
+  <view>
+    <view>退出登录</view>
+  </view>
+</view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <include src="preson1.wxml" />
+    </swiper-item>
+  </swiper>
+</view>

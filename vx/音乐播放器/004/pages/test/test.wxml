@@ -1,0 +1,3 @@
+<scroll-view scroll-x scroll-y scroll="height:200px" bindscroll="scroll">
+<view style="width: 200%; height: 400px;background: scroll;"></view>
+</scroll-view>
